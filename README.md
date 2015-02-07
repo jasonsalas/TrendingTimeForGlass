@@ -20,7 +20,9 @@ Have a look at [Trending Time's usage flow](https://drive.google.com/file/d/0B4v
 To launch Trending Time, say, _"OK, Glass...see what's trending"_. The card launches to the left of the home screen. Tapping on this card at any time brings up a series of commands, as follows:
 
 **Send to Phone**
+
 ![Send to Phone](https://dl.dropboxusercontent.com/u/12019700/glass-dev/trendingtime/2.png)
+
 Tapping on this menu items uses [Pushbullet](http://pushbullet.com) (requires an account and authorization) to send a selected trending topic as a notification to your designated Android or iOS phone. (It also works for tablets.)
 
 A new pushed trending topic arrives on your phone's notification drawer.
@@ -34,12 +36,18 @@ Tapping on the notification brings up the pushed trending topic link in Pushbull
 Tapping the link gives you the ability to view tweets in Twitter's mobile app (if installed) or your mobile browser.
 ![Push example Step 3](https://dl.dropboxusercontent.com/u/12019700/glass-dev/trendingtime/push3.png)
 
+
 **Send to Chrome**
+
 ![Send to Chrome](https://dl.dropboxusercontent.com/u/12019700/glass-dev/trendingtime/3.png)
+
 Tapping on this menu items uses [Pushbullet](http://pushbullet.com) (requires an account and authorization) to send a selected trending topic to Chrome on your desktop PC or laptop.
 
+
 **View in Browser**
+
 ![View in Browser](https://dl.dropboxusercontent.com/u/12019700/glass-dev/trendingtime/4.png)
+
 Tapping on this menu items allows you to view Twitter's mobile web UI to review tweets making up the trending topic directly on Glass.
 
 
