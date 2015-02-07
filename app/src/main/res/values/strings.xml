@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Trending Time</string>
+
+    <!-- footer content -->
+    <string name="footer_trending">What\'s trending now</string>
+    <string name="footer_timestamp">Updated:\u00A0</string>
+
+    <!-- MENU ITEMS -->
+    <string name="stop">Stop</string>
+    <string name="explore_trends">Explore trends</string>
+    <string name="send_to_phone">Send to Phone</string>
+    <string name="send_to_chrome">Send to Chrome</string>
+    <string name="view_in_browser">View in Browser</string>
+</resources>

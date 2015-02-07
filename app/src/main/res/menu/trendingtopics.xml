@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/sendToPhone"
+        android:title="@string/send_to_phone"
+        android:icon="@drawable/pushbulleticon" />
+
+    <item
+        android:id="@+id/sendToChrome"
+        android:title="@string/send_to_chrome"
+        android:icon="@drawable/pushbulleticon" />
+
+    <item
+        android:id="@+id/viewInBrowser"
+        android:title="@string/view_in_browser"
+        android:icon="@drawable/browser" />
+
+    <item
+        android:id="@+id/stop"
+        android:title="@string/stop"
+        android:icon="@drawable/ic_stop" />
+</menu>

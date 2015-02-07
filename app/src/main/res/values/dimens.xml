@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- recommended margin for the top, left, and right edges of a card -->
+    <dimen name="glass_card_margin">40px</dimen>
+
+    <!--recommended margin between the bottom of the card and the footer -->
+    <dimen name="glass_card_footer_margin">33px</dimen>
+
+    <!-- maximum height of the body content inside a card -->
+    <dimen name="glass_card_body_height">240px</dimen>
+
+</resources>
