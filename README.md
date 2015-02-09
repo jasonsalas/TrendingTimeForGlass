@@ -11,6 +11,10 @@ The wearable ethos isn't ruined by trying to keep up with trends at that pace on
 ### Tech talk presentation
 You can review the slide deck that details this project [here](http://www.slideshare.net/jasonsalas/trending-time-on-google-glass).
 
+### Sideloading instructions
+This app is currently under review by Google, so until it goes live in [MyGlass](http://google.com/myglass), you can [download the APK here](https://github.com/jasonsalas/TrendingTimeForGlass/releases) and then sideload it by connecting Glass to your computer via USB and then executing the following at a command prompt:
+**adb install -r TrendingTimeForGlass-v0.1.apk**
+
 ### Target audience
 The Glassware is geared towards people heavily involved in social media and popular culture, with an interest in what's going on around them. The roadmap is to have the data eventually be increasingly dynamic (faster updates) and contextual (relevant to their location, surroundings, proximity to friends, etc.). 
 
