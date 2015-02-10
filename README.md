@@ -65,7 +65,7 @@ Tapping on this menu items allows you to view Twitter's mobile web UI to review 
 ### Architecture
 Trending Time is intended to be a fun utility to use, and also a learning tutorial for Glassware development. Just like [it's Android Wear cousin](http://www.slideshare.net/jasonsalas/trending-time-datadriven-watch-face-development-for-android-wear), it's open source and free to examine. This Glass version is based on [live cards](https://developers.google.com/glass/develop/gdk/live-cards), and uses a [shared proxy handler on Google App Engine](https://github.com/jasonsalas/TrendingTime/wiki/Custom-proxy-on-App-Engine) to access [Twitter's API](https://dev.twitter.com/rest/reference/get/trends/place) to access the latest trending topics for the **"USA"** region.
 
-It also uses the [Pushbullet API](https://docs.pushbullet.com/http/) to send selected trending topics to your phone or desktop version of Chrome so you can see how the topic got so popular, and what people are saying about it in real time.
+It also uses the [GDK authentication scheme](https://developers.google.com/glass/develop/gdk/authentication) to access the [Pushbullet API](https://docs.pushbullet.com/http/) in order to send selected trending topics to your phone or desktop version of Chrome so you can see how the topic got so popular, and what people are saying about it in real time.
 
 Feel free to submit bug reports, pull requests, and fork the code and make it your own. There's lots that can be done with the core idea. I'd love to see what you do with it!
 
