@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>Trending Time for Glass by jasonsalas</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1>Trending Time for Glass</h1>
+        <h2>A wearable application for Google Glass surfacing Twitter&#39;s tatest trending topics</h2>
+        <a href="https://github.com/jasonsalas/TrendingTimeForGlass" class="button"><small>View project on</small> GitHub</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h1>
+<a id="trending-time---gives-you-a-view-in-google-glass-of-what-everyones-buzzing-about" class="anchor" href="#trending-time---gives-you-a-view-in-google-glass-of-what-everyones-buzzing-about" aria-hidden="true"><span class="octicon octicon-link"></span></a>Trending Time - gives you a view in Google Glass of what everyone's buzzing about</h1>
+
+<h2>
+<a id="a-glassware-application-using-twitters-trending-topics" class="anchor" href="#a-glassware-application-using-twitters-trending-topics" aria-hidden="true"><span class="octicon octicon-link"></span></a>A Glassware application using Twitter's trending topics</h2>
+
+<p><img src="https://dl.dropboxusercontent.com/u/12019700/glass-dev/trendingtime/github-REAME-cover.png" alt="Trending Time surfaces the latest trending topics on Twitter"></p>
+
+<h3>
+<a id="project-description" class="anchor" href="#project-description" aria-hidden="true"><span class="octicon octicon-link"></span></a>Project description</h3>
+
+<p>This project is a port to Glass of an app <a href="https://play.google.com/store/apps/details?id=wearables.jasonsalas.com.trendingtime">originally built for Android Wear</a> and made available as <a href="https://github.com/jasonsalas/TrendingTime">an open source tutorial</a> that conveniently surfaces the latest trending topics from Twitter in the wearer's periphery. The aim is not only to let the user see what's trending at the moment - but also to let the user drill-down into the actual tweets constituting that trend. Users will be able to send a selected trending topic to their phone or to Chrome on the desktop to get tweets about a popular topic - at the pulse it's happening. They can also view Twitter's mobile site directly on Glass. </p>
+
+<p>The wearable ethos isn't ruined by trying to keep up with trends at that pace on Glass...but people are empowered with the ability to see why something's captured the public's attention and let them participate in a normal way.</p>
+
+<h3>
+<a id="tech-talk-presentation" class="anchor" href="#tech-talk-presentation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Tech talk presentation</h3>
+
+<p>You can review the slide deck that details this project <a href="http://www.slideshare.net/jasonsalas/trending-time-on-google-glass">here</a>.</p>
+
+<h3>
+<a id="sideloading-instructions" class="anchor" href="#sideloading-instructions" aria-hidden="true"><span class="octicon octicon-link"></span></a>Sideloading instructions</h3>
+
+<p>This app is currently under review by Google, so until it goes live in <a href="http://google.com/myglass">MyGlass</a>, you can <a href="https://github.com/jasonsalas/TrendingTimeForGlass/releases">download the APK here</a> and then sideload it by connecting Glass to your computer via USB and then executing the following at a command prompt:
+<strong>adb install -r TrendingTimeForGlass-v0.1.apk</strong></p>
+
+<h3>
+<a id="target-audience" class="anchor" href="#target-audience" aria-hidden="true"><span class="octicon octicon-link"></span></a>Target audience</h3>
+
+<p>The Glassware is geared towards people heavily involved in social media and popular culture, with an interest in what's going on around them. The roadmap is to have the data eventually be increasingly dynamic (faster updates) and contextual (relevant to their location, surroundings, proximity to friends, etc.). </p>
+
+<p>At it's core, Trending Time serves as a fun utility that's entertaining, informative, and helpful - keeping users in the know about what the buzz online is.</p>
+
+<h3>
+<a id="usage-flow" class="anchor" href="#usage-flow" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage flow</h3>
+
+<p>Have a look at <a href="https://drive.google.com/file/d/0B4vMEmrUkj0qOVJCT2k5TjZBSG8/view?usp=sharing">Trending Time's usage flow</a> in <a href="https://developers.google.com/glass/tools-downloads/glassware-flow-designer">Glassware Flow Designer</a>.</p>
+
+<p>To launch Trending Time, say, <em>"OK, Glass...see what's trending"</em>. The card launches to the left of the home screen. Tapping on this card at any time brings up a series of commands, as follows:</p>
+
+<p><strong>Send to Phone</strong></p>
+
+<p><img src="https://dl.dropboxusercontent.com/u/12019700/glass-dev/trendingtime/2.png" alt="Send to Phone"></p>
+
+<p>Tapping on this menu items uses <a href="http://pushbullet.com">Pushbullet</a> (requires an account and authorization) to send a selected trending topic as a notification to your designated Android or iOS phone. (It also works for tablets.)</p>
+
+<p>A new pushed trending topic arrives on your phone's notification drawer.
+<img src="https://dl.dropboxusercontent.com/u/12019700/glass-dev/trendingtime/push1.png" alt="Push example Step 1"></p>
+
+<p>Tapping on the notification brings up the pushed trending topic link in Pushbullet.
+<img src="https://dl.dropboxusercontent.com/u/12019700/glass-dev/trendingtime/push2.png" alt="Push example Step 2"></p>
+
+<p>Tapping the link gives you the ability to view tweets in Twitter's mobile app (if installed) or your mobile browser.
+<img src="https://dl.dropboxusercontent.com/u/12019700/glass-dev/trendingtime/push3.png" alt="Push example Step 3"></p>
+
+<p><strong>Send to Chrome</strong></p>
+
+<p><img src="https://dl.dropboxusercontent.com/u/12019700/glass-dev/trendingtime/3.png" alt="Send to Chrome"></p>
+
+<p>Tapping on this menu items uses <a href="http://pushbullet.com">Pushbullet</a> (requires an account and authorization) to send a selected trending topic to Chrome on your desktop PC or laptop.</p>
+
+<p><img src="https://dl.dropboxusercontent.com/u/12019700/glass-dev/trendingtime/view-desktopbrowser.png" alt="Send to Chrome"></p>
+
+<p><strong>View in Browser</strong></p>
+
+<p><img src="https://dl.dropboxusercontent.com/u/12019700/glass-dev/trendingtime/4.png" alt="View in Browser"></p>
+
+<p>Tapping on this menu items allows you to view Twitter's mobile web UI to review tweets making up the trending topic directly on Glass.</p>
+
+<p><img src="https://dl.dropboxusercontent.com/u/12019700/glass-dev/trendingtime/view-glassbrowser.png" alt="View in Browser"></p>
+
+<h3>
+<a id="architecture" class="anchor" href="#architecture" aria-hidden="true"><span class="octicon octicon-link"></span></a>Architecture</h3>
+
+<p>Trending Time is intended to be a fun utility to use, and also a learning tutorial for Glassware development. Just like <a href="http://www.slideshare.net/jasonsalas/trending-time-datadriven-watch-face-development-for-android-wear">it's Android Wear cousin</a>, it's open source and free to examine. This Glass version is based on <a href="https://developers.google.com/glass/develop/gdk/live-cards">live cards</a>, and uses a <a href="https://github.com/jasonsalas/TrendingTime/wiki/Custom-proxy-on-App-Engine">shared proxy handler on Google App Engine</a> to access <a href="https://dev.twitter.com/rest/reference/get/trends/place">Twitter's API</a> to access the latest trending topics for the <strong>"USA"</strong> region.</p>
+
+<p>It also uses the <a href="https://developers.google.com/glass/develop/gdk/authentication">GDK authentication scheme</a> to access the <a href="https://docs.pushbullet.com/http/">Pushbullet API</a> in order to send selected trending topics to your phone or desktop version of Chrome so you can see how the topic got so popular, and what people are saying about it in real time.</p>
+
+<p>Feel free to submit bug reports, pull requests, and fork the code and make it your own. There's lots that can be done with the core idea. I'd love to see what you do with it!</p>
+
+<hr>
+
+<p>You can find out more Glassware tips in my book, <a href="http://www.amazon.com/Designing-Developing-Google-Glass-Differently/dp/1491946458">Designing and Developing for Google Glass</a>, by O'Reilly &amp; Associates. <strong>Thanks for your support! :)</strong></p>
+        </section>
+
+        <aside id="sidebar">
+          <a href="https://github.com/jasonsalas/TrendingTimeForGlass/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/jasonsalas/TrendingTimeForGlass/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
+
+          <p class="repo-owner"><a href="https://github.com/jasonsalas/TrendingTimeForGlass"></a> is maintained by <a href="https://github.com/jasonsalas">jasonsalas</a>.</p>
+
+          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
+    </div>
+
+  
+  </body>
+</html>
